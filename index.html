@@ -15,7 +15,7 @@
 }
 
 body{
-  background:linear-gradient(180deg,#020817,#071b34,#020817);
+  background:#0B3D91;
   display:flex;
   justify-content:center;
   padding:20px 14px 50px;
@@ -189,7 +189,7 @@ body{
   font-size:11px;
   font-weight:700;
   letter-spacing:3px;
-  color:#60a5fa;
+  color:#b9d5ff;
   justify-content:center;
 }
 
@@ -198,17 +198,17 @@ body{
   content:"";
   height:1px;
   width:60px;
-  background:rgba(96,165,250,.25);
+  background:rgba(255,255,255,.25);
 }
 
 /* BANNER */
 
 .banner-card{
-  background:#0f172a;
-  border:1px solid rgba(255,255,255,.06);
+  position:relative;
+  background:white;
   border-radius:24px;
   overflow:hidden;
-  box-shadow:0 8px 26px rgba(0,0,0,.35);
+  box-shadow:0 8px 26px rgba(0,0,0,.25);
   margin-bottom:18px;
 }
 
@@ -217,25 +217,31 @@ body{
   display:block;
 }
 
-.banner-content{
-  padding:14px;
+.banner-overlay{
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(8px);
+  border-radius:14px;
+  padding:13px 10px;
   text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.12);
 }
 
-.banner-label{
-  font-size:10px;
+.overlay-label{
+  font-size:11px;
   letter-spacing:2px;
   font-weight:700;
-  color:#60a5fa;
-  margin-bottom:6px;
-  text-align:center;
+  color:#2f55a4;
+  margin-bottom:5px;
 }
 
-.banner-title{
-  font-size:14px;
-  font-weight:700;
-  color:white;
-  text-align:center;
+.overlay-title{
+  font-size:17px;
+  font-weight:800;
+  color:#111827;
 }
 
 /* MENU */
@@ -377,16 +383,9 @@ MALAYSIA
 
 <img src="banner.png">
 
-<div class="banner-content">
-
-<div class="banner-label">
-OK88 EXCLUSIVE
-</div>
-
-<div class="banner-title">
-Unlock Malaysia Rewards!
-</div>
-
+<div class="banner-overlay">
+<div class="overlay-label">OK88 EXCLUSIVE</div>
+<div class="overlay-title">Unlock Malaysia Rewards!</div>
 </div>
 
 </div>
