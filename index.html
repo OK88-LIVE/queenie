@@ -6,7 +6,6 @@
 <title>Queenie OK88 Landing</title>
 
 <style>
-
 *{
   margin:0;
   padding:0;
@@ -26,8 +25,6 @@ body{
   width:100%;
   max-width:420px;
 }
-
-/* PROFILE */
 
 .profile-wrapper{
   position:relative;
@@ -71,8 +68,6 @@ body{
   margin-bottom:14px;
   color:white;
 }
-
-/* LIVE BUTTON */
 
 .live-btn{
   display:inline-flex;
@@ -129,20 +124,9 @@ body{
 }
 
 @keyframes liveGlow{
-  0%{
-    transform:translateY(0px);
-    box-shadow:0 0 18px rgba(96,165,250,.35);
-  }
-
-  50%{
-    transform:translateY(-3px);
-    box-shadow:0 0 30px rgba(96,165,250,.8);
-  }
-
-  100%{
-    transform:translateY(0px);
-    box-shadow:0 0 18px rgba(96,165,250,.35);
-  }
+  0%{transform:translateY(0px);box-shadow:0 0 18px rgba(96,165,250,.35);}
+  50%{transform:translateY(-3px);box-shadow:0 0 30px rgba(96,165,250,.8);}
+  100%{transform:translateY(0px);box-shadow:0 0 18px rgba(96,165,250,.35);}
 }
 
 @keyframes shine{
@@ -150,15 +134,11 @@ body{
   100%{left:140%;}
 }
 
-/* DIVIDER */
-
 .divider{
   height:1px;
   background:rgba(255,255,255,.08);
   margin:0 0 22px;
 }
-
-/* SOCIAL */
 
 .socials{
   display:flex;
@@ -182,8 +162,6 @@ body{
   object-fit:contain;
 }
 
-/* SECTION TITLE */
-
 .section-title{
   display:flex;
   align-items:center;
@@ -204,8 +182,6 @@ body{
   background:rgba(255,255,255,.15);
 }
 
-/* BANNER */
-
 .banner-card{
   position:relative;
   display:block;
@@ -217,6 +193,32 @@ body{
   box-shadow:0 8px 26px rgba(0,0,0,.28);
   margin-bottom:18px;
   text-decoration:none;
+  transition:.25s ease;
+}
+
+.banner-card:hover{
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:
+    0 0 0 1px rgba(125,211,252,.25),
+    0 12px 32px rgba(59,130,246,.25),
+    0 0 24px rgba(96,165,250,.18);
+}
+
+.banner-card:active{
+  transform:scale(.98);
+  box-shadow:
+    0 0 0 1px rgba(125,211,252,.35),
+    0 6px 18px rgba(59,130,246,.22),
+    0 0 18px rgba(96,165,250,.22);
+}
+
+.banner-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,0));
+  pointer-events:none;
 }
 
 .banner-card img{
@@ -235,6 +237,7 @@ body{
   border-radius:16px;
   padding:14px 10px;
   text-align:center;
+  z-index:2;
 }
 
 .overlay-label{
@@ -250,8 +253,6 @@ body{
   font-weight:800;
   color:white;
 }
-
-/* MENU */
 
 .menu-btn{
   background:rgba(10,25,55,.78);
@@ -311,8 +312,6 @@ body{
   color:#93c5fd;
 }
 
-/* VISIT BUTTON */
-
 .visit-btn{
   margin-top:20px;
   display:block;
@@ -330,7 +329,6 @@ body{
 .visit-btn:hover{
   transform:scale(1.03);
 }
-
 </style>
 </head>
 
@@ -338,212 +336,107 @@ body{
 
 <div class="container">
 
-<!-- PROFILE -->
-
 <div class="profile-wrapper">
+  <div class="profile-card">
 
-<div class="profile-card">
+    <div class="avatar">
+      <img src="queenie.jpg">
+    </div>
 
-<div class="avatar">
-<img src="queenie.jpg">
+    <div class="name">Queenie</div>
+
+    <a href="https://t.me/ok88community" target="_blank" class="live-btn">
+      <div class="live-dot"></div>
+      WATCH LIVE HERE
+    </a>
+
+    <div class="divider"></div>
+
+    <div class="socials">
+      <div class="social"><img src="facebook.png"></div>
+      <div class="social"><img src="instagram.png"></div>
+      <div class="social"><img src="tiktok.png"></div>
+      <div class="social"><img src="telegram.png"></div>
+    </div>
+
+  </div>
 </div>
 
-<div class="name">Queenie</div>
-
-<a href="https://t.me/ok88community" target="_blank" class="live-btn">
-<div class="live-dot"></div>
-WATCH LIVE HERE
-</a>
-
-<div class="divider"></div>
-
-<div class="socials">
-
-<div class="social">
-<img src="facebook.png">
-</div>
-
-<div class="social">
-<img src="instagram.png">
-</div>
-
-<div class="social">
-<img src="tiktok.png">
-</div>
-
-<div class="social">
-<img src="telegram.png">
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- MALAYSIA -->
-
-<div class="section-title">
-MALAYSIA
-</div>
+<div class="section-title">MALAYSIA</div>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="banner-card">
+  <img src="banner.png">
 
-<img src="banner.png">
-
-<div class="banner-overlay">
-<div class="overlay-label">OK88 EXCLUSIVE</div>
-<div class="overlay-title">Unlock Malaysia Rewards!</div>
-</div>
-
+  <div class="banner-overlay">
+    <div class="overlay-label">OK88 EXCLUSIVE</div>
+    <div class="overlay-title">Unlock Malaysia Rewards!</div>
+  </div>
 </a>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="logo.png">
-</div>
-
-<div class="menu-text">
-Dep RM50 FREE RM28
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="logo.png"></div>
+    <div class="menu-text">Dep RM50 FREE RM28</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
 <a href="https://www.ok88vip.com/register?affiliateCode=queenie" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="logo.png">
-</div>
-
-<div class="menu-text">
-Register Get upto RM88
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="logo.png"></div>
+    <div class="menu-text">Register Get upto RM88</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
-<!-- CLAIM -->
-
-<div class="section-title">
-CLAIM PROMO CODE HERE
-</div>
+<div class="section-title">CLAIM PROMO CODE HERE</div>
 
 <a href="https://t.me/ok88community" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegram-icon.png">
-</div>
-
-<div class="menu-text">
-Join OK88 Community
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="telegram-icon.png"></div>
+    <div class="menu-text">Join OK88 Community</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
 <a href="https://t.me/ok88community" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegram-icon.png">
-</div>
-
-<div class="menu-text">
-Join OK88 Community
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="telegram-icon.png"></div>
+    <div class="menu-text">Join OK88 Community</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
-<!-- SUPPORT -->
-
-<div class="section-title">
-OK88 24/7 CS SUPPORT
-</div>
+<div class="section-title">OK88 24/7 CS SUPPORT</div>
 
 <a href="https://walink.ok88_my" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="whatsapp.png">
-</div>
-
-<div class="menu-text">
-WA | 24/7 Support
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="whatsapp.png"></div>
+    <div class="menu-text">WA | 24/7 Support</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
 <a href="https://t.me/ok88admin1" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="telegramcs.png">
-</div>
-
-<div class="menu-text">
-Telegram | 24/7 Support
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="telegramcs.png"></div>
+    <div class="menu-text">Telegram | 24/7 Support</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
-<!-- SINGAPORE -->
-
-<div class="section-title">
-SINGAPORE
-</div>
+<div class="section-title">SINGAPORE</div>
 
 <a href="https://www.ok88sg.net/register?affiliateCode=queeniesg" target="_blank" class="menu-btn">
-
-<div class="menu-left">
-
-<div class="menu-icon">
-<img src="sg-logo.png">
-</div>
-
-<div class="menu-text">
-Register Get upto SGD88
-</div>
-
-</div>
-
-<div class="arrow">›</div>
-
+  <div class="menu-left">
+    <div class="menu-icon"><img src="sg-logo.png"></div>
+    <div class="menu-text">Register Get upto SGD88</div>
+  </div>
+  <div class="arrow">›</div>
 </a>
 
 <a href="https://ok88.asia/" target="_blank" class="visit-btn">
-Visit OK88LIVE.COM ↗
+  Visit OK88LIVE.COM ↗
 </a>
 
 </div>
